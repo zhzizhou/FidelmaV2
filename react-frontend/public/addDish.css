@@ -1,0 +1,205 @@
+@font-face
+{
+font-family: worksans;
+src: url('/res/font/WorkSans-Regular.ttf');
+}
+
+/* html{ */
+    /* 100vw = screen width */
+    /* font-size:10.666666666666666vw; */
+/* } */
+
+
+.content.top img {
+    border-style:none;
+    width:23.999999999999vw;
+    height:23.73333333333vw;
+    margin-left:38vw;
+    margin-top: 8.5333333333333vw; 
+    /*
+    margin-top: box move downward
+    margin-left: box move to right
+    margin_bottom: others move downward
+    if in one element is contain in a parent element
+    width(parent) = margin-left+border-left+padding-left+width+margin-right+border-right+padding-right 
+    */
+
+}
+
+
+
+#editPart {
+    color : #000000;
+    font-size: 4.266666666666666vw;
+    font-family:worksans;
+    margin-left: 3vw;
+}
+
+.inputPart {
+    border-style:solid;
+    /*top,right,bottom,left*/
+    border-width:0.2666666666666666vw;
+    border-color:#707070;
+    width:81.06666666666666666vw;
+    height:6.93333333333333333vw;
+    margin-top:3vw;
+    margin-bottom: 3vw;
+    border-radius: 2vw;
+}
+.inputPartSpecial {
+    border-style:solid;
+    /*top,right,bottom,left*/
+    border-width:0.2666666666666666vw;
+    border-color:#707070;
+    width:81.06666666666666666vw;
+    height:16.5333333333333333vw;
+    color : #000000;
+    font-size: 4.26666666666666vw;
+    font-family:worksans;
+    margin-top:3vw;
+    margin-bottom: 3vw;
+}
+
+.content.edit{
+    margin-left:5.333333333333vw;
+    margin-top:3.2vw;
+}
+
+.ingredientsList{
+    border-style:none;
+    /*top,right,bottom,left*/
+    border-width:0px;
+    width:81.06666666666666666vw;
+    height:53.333333333333vw;
+    color : #707070;
+    font-size: 4.2666666666666vw;
+    font-family:worksans;
+    margin-top:0px;
+    /* display:none; */
+}
+
+.arrow {
+    width: 2.34666666666666666666666vw;
+    height: 3.594666666666666vw;
+}
+
+.min{
+    background-color:#FEFCF7;
+    border-style:none;
+    /* margin-left:2.133333333333333vw; */
+}
+
+
+
+.quantity {
+    width:7.58666666666666vw;
+    height:5.58666666666666vw;
+    border-style:dashed;
+    border-width:0.266666666666666vw;
+    border-color:#707070;
+    border-style: solid;
+    display: block;
+    float:right;
+    margin-right:2.13333333333333vw;
+    border-radius: 1vw;
+    margin-top: 1vw;
+}
+
+
+.name {
+    color : #000000;
+    font-size: 4.8vw;
+    font-family:worksans;
+    display: block;
+    float:left;
+}
+
+.unit {
+    color : #000000;
+    font-size: 4.8vw;
+    font-family:worksans;
+    display: block;
+    float:right;
+    margin-left: auto;
+}
+
+.ingredientsList div {
+    padding-top: 3.2vw;
+    margin-bottom: 7.46666666666vw;
+    display:block;
+}
+
+.show {display:block;}
+
+.backSign{
+    margin-left:6.6666666666666vw;
+    margin-top:8.53333333333vw;
+    width:9.333333333333vw;
+    height:9.33333333333vw;
+}
+
+.icon-arrow {
+    width:2.34933333333vw;
+    height:3.59466666666666vw;
+    margin-left:2.133333333333333vw;
+    /*设置所有动画的效果：0.3s 淡出效果*/
+    transition: all .3s ease-out;
+}
+.icon-arrow-rotate {
+    /*旋转180度*/
+    transform: rotate(90deg);
+}
+
+#saveButton {
+    /* position:absolute;
+    z-index: 1;
+    margin-top:-35vw;
+    width:25.66666666666vw;
+    height:9.6vw;
+    margin-left: 35vw;
+    background-color:#F01E1E;
+    padding-left: 7vw;
+    padding-top: 1vw; */
+    margin-top: 28%;
+    width:25.66666666666vw;
+    height:9.6vw;
+    margin-left: 35vw;
+    background-color:#F01E1E;
+    padding-left: 7vw;
+    padding-top: 1vw;
+    position: relative;
+
+}
+
+#save{
+    font-size: 5.33333333vw;
+    background-color: #F01E1E;
+    color: #FEFCF7;
+}
+
+.errorAddNewDish{
+    position:absolute;
+    margin-left:0vw;
+    margin-top:-3vw;
+}
+
+.addSubTitle{
+    margin-top:4vw;
+}
+
+.imageUpload{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    border: none;
+    background: #fef289;
+    color: #000;
+}
+
+
+

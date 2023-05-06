@@ -1,0 +1,217 @@
+*{
+    padding: 0%;
+    margin: 0%;
+}
+
+@font-face {
+    font-family:"Sakura";
+    src:url('res/font/Sakura.ttf');
+}
+
+@font-face {
+    font-family:"Auttera";
+    src:url('res/font/Auttera.ttf');
+}
+
+body{
+    background-color: #FEFCF7;
+}
+
+.menuHead{
+    position: relative;
+    width: auto;
+    max-width: 100%;
+}
+
+.menuHead .logo{
+    width: 16vw;
+    height: 16vw;
+    position: absolute;
+    top: -20%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+#menuPic{
+    width:100vw;
+    height:57.333333333vw;
+    z-index: 1;
+}
+
+#menuWord{
+    font-family:"Sakura";
+    
+    color: #FEFCF7;
+
+    text-align: center;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    z-index: 1;
+}
+#menuBox {
+    font-size: 34.6666666666vw;
+    position: absolute;
+    margin-left:27.466666666vw;
+    margin-top:8vw;
+}
+
+.nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #F01E1E;
+    max-width: 100%;
+    margin-top: -1.3%;
+    height: 8.8vw;
+}
+
+/* change left back button */
+.nav input{
+    margin-left: 2vw;
+    width: 2.66666666vw;
+    height: 2.66666666vw;
+}
+
+/* table No change */
+.nav span{
+    margin-right: 42vw;
+    color: #FFFFFF;
+    font-size: 3vw;
+}
+
+
+
+.innerMenuContainer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+}
+
+
+.innerMenuContainer div{
+    margin-left: 1em;
+}
+
+/* change */
+.innerMenuContainer button{
+    margin-right: 2vw;
+    font-size: 4vw;
+    width: 18vw;
+    height: 8vw;
+    border: none;
+    vertical-align: middle;
+    text-align: center;
+    margin-right:7.2vw;
+    border-radius: 1.66666666vw;
+    margin-top:10vw;
+    background-color: #F01E1E;
+    color: #FFFFFF;
+}
+
+.menuTitle{
+    margin-top:10vw;
+    
+}
+
+#menuTitleWord {
+    font-family: 'Auttera';
+    font-size:10vw;
+    margin-left:2vw;
+}
+
+.separateLine{
+    margin:auto;
+    width:90.666666666vw;
+    margin-top:5.06666666vw;
+    height:0px;
+    background-color:#B9B3B3;
+    border-bottom:0.05vw solid #B9B3B3;
+}
+
+.foodUnit {
+    display: flex;
+    flex-direction: column;
+}
+
+.foodBox {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.foodBox img {
+    width : 6em;
+    height: 6em;
+    margin: 0.5em;
+}
+
+.textBox {
+    margin-right:30vw;
+}
+
+.foodBox .textBox .burgerDesc{
+    width: 80%;
+    margin-left: 0.5em;
+} 
+
+.foodBox .textBox .burgerOthers{
+    display: flex;
+    flex-direction: row;
+    margin-top: 1em;
+}
+
+.foodBox .textBox .burgerOthers .burgerPrice{
+    margin-left: 2em;
+} 
+
+.foodBox input{
+    margin-right: 3vw;
+    max-width: 3em;
+    max-height: 3em;
+    color: #FEFCF7;
+}
+
+.delDishBtn{
+    display: none;
+}
+
+.updateButton{
+    display:none;
+}
+
+/* change */
+#addMoreButton{
+    display: none;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1em;
+    align-items: center;
+    font-size: large;
+    padding: 1.5%;
+    border-radius: 1.66666666vw;
+    border:none;
+    background-color: #F01E1E;
+    color: #FFFFFF;
+}
+
+.soldOutDiv{
+    margin-top: 5vh;
+    text-align: center;
+    font-size: 4vw;
+    font-style: italic;
+    font-weight: bolder;
+}
+
+.crashDish{
+    color: #F01E1E;
+}

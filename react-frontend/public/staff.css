@@ -1,0 +1,660 @@
+@font-face {
+    font-family: "WorkSans";
+    src: url("res/font/WorkSans-Regular.ttf");
+}
+
+* :not(#menuword){
+    font-family: "WorkSans";
+}
+
+body{
+    background-color: #FEFCF7;
+}
+
+.dashboardHeader{
+    margin-top: 10%;
+    margin-left: 8%;
+}
+
+.dashboardImg{
+    height: 20%;
+    width: 20%;
+}
+
+.staffName{
+    display: inline-block;
+    font-size: 0.6em;
+}
+
+.editButton{
+    background-color: #F01E1E;
+    color: #FFFFFF;
+    border-style: none;
+    border-radius: 1vw;
+    margin-left: 3vw;
+    width:20vw;
+}
+
+.container {
+    top:50%;
+    left:50%;
+    margin-left: -65px;
+    margin-top: -20px;
+    width: 130px;
+    height: 40px;
+    text-align: center;
+  }
+  .button {
+    display: inline-block;
+    background-color: #7b38d8;
+    border-radius: 20px;
+    border:none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 28px;
+    padding: 20px;
+    width: 200px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+  }
+  
+  .button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  .button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+  .button:hover span {
+    padding-right: 25px;
+  }
+  
+  .button:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+
+.dashboardIcon{
+    height: 20%;
+    width: 12%;
+    margin-top: 5%;
+    margin-left: 5%;
+}
+
+.dashboardBar{
+    margin-top: 4em;
+    margin-left: 8%;
+    margin-right: 8%;
+    background-color: #F01E1E;
+    border-radius: 1em;
+}
+
+.dashboardContent{
+    display: inline-block;
+    padding-bottom: 5%;
+}
+
+.dashboardContent h2{
+    margin-left: 5%;
+    font-size: 1.3em;
+}
+
+.dashboardBar h2{
+    color: #FFFFFF;
+}
+
+img{
+    height: 40%;
+    width: 15%;
+    display: inline-block;
+}
+
+.material{
+    margin-left: 5%; 
+    padding-top: 30px;
+}
+
+.rawMaterialIcon{
+    height: 18%;
+    width: 12%;
+    margin-left: 3%;
+    margin-top: 5%;
+}
+
+.backButton{
+    height: 10%;
+    width: 5%;
+    margin-left:2vw;
+}
+
+.titleContainer{
+    background-color: #F01E1E;
+    margin-top: 5%;
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+.ingredientContainer{
+    background-color: #FFFFFF; 
+    margin-left: 2%; 
+    margin-right: 2%; 
+    padding-bottom: 6.25em;
+}
+
+.title{
+    color: #FFFFFF; 
+    font-size: 1.8em;
+    display: inline-block;
+    margin-left: 25%;
+}
+
+.tableContainer{
+    background-color: #FEFCF7; 
+    /* margin-left: 3%; 
+    margin-right: 3%;  */
+    padding-top: 2em;
+    padding-bottom: 2em;
+}
+
+.ingredientHeader{
+    margin-top: 5%;
+}
+
+.ingredientTable {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    /* width: 90%;
+    margin-left: 0.6em;
+    margin-right: 0.6em; */
+    width: 92vw;
+    margin-left: 2vw;
+}
+
+.ingredientTable td, th {
+    border: 0.05em solid #dddddd;
+    text-align: left;
+    padding: 0.5em;
+    text-align: center;
+
+}
+
+.ingredientTable th{
+    font-size: 0.8em;
+    background-color:rgb(226, 225, 225);
+    text-align: center;
+}
+
+.ingredientTable td{
+    font-size: 0.6em;
+    background-color: #FFFFFF;
+
+}
+
+.add{
+    height: 7%;
+    width: 7%;
+    margin-left: 1.3em;
+    margin-top: 3%;
+}
+
+.editForm{
+    width: 75%;
+    height: 40%;
+    padding: 1em;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 12px;
+    background: #FEFCF7;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.submitButton{
+    width: 83.5%; 
+    height: 2em;
+    font-size: 1.2em;
+    color: #FFFFFF;
+    background-color: #F01E1E;
+    border-style: none;
+}
+
+.update{
+    background-color: #FFFFFF;
+    width: 80%; 
+    height: 1.2em; 
+    font-size: 1.2em;
+}
+
+.formTitle h1 {
+    font-size: 2em;
+}
+
+.formTitle, .formContent h4{
+    font-size: 1.5em;
+}
+
+.closeButton {
+    background:#F01E1E;
+    padding: 4px 12px;
+    font-size: 30px;
+    font-weight: 400;
+    border-radius: 4px;
+    text-decoration: none;
+    border-width: 0;
+    color: #FFFFFF;
+    margin-top: 20px;
+    position: relative;
+    cursor: pointer;
+    float:right;
+} 
+
+.editIngredientButton{
+    background-color: #F01E1E;
+    color: #FFFFFF;
+    border-style: none;
+    font-size: 1.2em;
+    border-radius: 4px;
+    padding: 4px 20px;
+    margin-left: 1vw;
+    margin-right: 1vw;
+} 
+
+.deleteIngredientButton{
+    background-color: #F01E1E;
+    color: #FFFFFF;
+    border-style: none;
+    font-size: 1.2em;
+    border-radius: 4px;
+    padding: 4px 12px;
+    margin-left: 1vw;
+    margin-right: 1vw;
+    margin-top: 1vw;
+} 
+
+.addForm{
+    width: 80%;
+    height: 40%;
+    padding: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 12px;
+    background: #FEFCF7;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.category  h1{
+    display: inline-block;
+}
+
+.formTitle{
+    margin-top: 20%; 
+    margin-left: 2.5%;
+}
+
+
+.formContent{
+    margin-top: 8%; 
+    margin-left: 3%;
+}
+
+/* For profile */
+.profileTitle h3{
+    text-align: center;
+}
+
+.titleSeparateLine{
+    margin:auto;
+    width:92.666666666vw;
+    margin-top:5.06666666vw;
+    height:0px;
+    background-color:#B9B3B3;
+    border-bottom:0.05vw solid #B9B3B3;
+}
+
+.profileImg{
+    height: 28%;
+    width: 28%;
+    margin-left: 36%;
+    margin-top: 5%;
+    margin-bottom: 10%;
+}
+
+.left{
+    text-align: left;
+    margin-left: 8%;
+}
+
+.right{
+    text-align: right;
+    margin-right: 8%;
+}
+
+.profileContent h4{
+    font-size: 1em;
+}
+
+.profileContent{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2%;
+}
+
+.profileSeparateLine{
+    margin:auto;
+    width:83.666666666vw;
+    margin-top:1.06666666vw;
+    height:0px;
+    background-color:#B9B3B3;
+    border-bottom:0.05vw solid #B9B3B3;
+}
+
+/* For order history */
+.historyBackIcon{
+    width: 6%;
+    height: 6%;
+    margin-left: 3%;
+    margin-bottom: 2%;
+}
+
+.historyHead{
+    align-items: center;
+    justify-content: space-between;
+}
+
+.historyHead h4{
+    display: inline-block;
+    margin-left: 16%;
+    margin-top: 4%;
+}
+
+.detailHead{
+    align-items: center;
+    justify-content: space-between;
+}
+
+.detailHead h4{
+    display: inline-block;
+    margin-left: 22%;
+    margin-top: 4%;
+}
+
+.historySeparateLine{
+    margin:auto;
+    width:100%;
+    margin-top:1.06666666vw;
+    height:0px;
+    background-color:#B9B3B3;
+    border-bottom:0.05vw solid #B9B3B3;
+}
+
+.historyTableContainer{
+    margin-top: 4%;
+
+
+    border: 0.1vw solid #c9c9c9;
+    border-top:none;
+    border-bottom:none;
+    width: 100%;
+}
+
+.historyTable{
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 4vw;
+    
+}
+
+.historyTable th{
+    background-color:rgb(226, 225, 225);
+}
+
+.historyTable td, th {
+    border: 0.1vw solid #c9c9c9;
+    border-left:none;
+    border-right:none;
+    text-align: left;
+    padding: 2.4vw;
+    text-align: center;
+
+}
+
+.historyTable th{
+    font-size: 3.4vw;
+}
+
+.historyTable td{
+    font-size: 2vw;
+
+}
+
+.preparing{
+    color:#F01E1E
+}
+
+.shipped{
+    color: #e09239;
+}
+
+.orderSearch{
+    width: 60vw;
+    margin-left: 20vw;
+    margin-bottom: 5vw;
+}
+
+.completeButton{
+    background-color: #F01E1E;
+    color: #FFFFFF;
+    border-style: none;
+    font-size: 1.2vw;
+    border-radius: 4px;
+    padding: 2px 2px;
+}
+
+.checkDetailButton{
+    background-color: #F01E1E;
+    color: #FFFFFF;
+    border-style: none;
+    font-size: 1.2vw;
+    border-radius: 4px;
+    padding: 2px 2px;
+    width: 14vw;
+}
+
+.foodDetails{
+    margin-top: 5%;
+    margin-bottom: 5%;
+    text-align: center;
+}
+
+.orderDetails h5{
+    text-align: center;
+    font-size: 7vw;
+    margin-top: 10vw;
+}
+
+.orderComment{
+    text-align: center;
+}
+
+.orderPrice{
+    color:#F01E1E;
+    margin-left: 4%;
+}
+/* For total income */
+.incomeHead{
+    align-items: center;
+    justify-content: space-between;
+}
+
+.incomeHead h4{
+    display: inline-block;
+    margin-left: 20%;
+    margin-top: 4%;
+}
+
+.incomeIconContainer{
+    text-align: center;
+    margin-top: 10%;
+}
+
+.incomeIconContainer h4{
+    margin-top: 25%;
+    font-size: 5.5vw;
+}
+
+.totalIncome{
+    text-align: center;
+    margin-top: 5%;
+}
+
+.totalIncome h4{
+    font-size: 12vw;
+}
+
+.withdrawContainer{
+    text-align: center;
+    margin-top: 5%;
+}
+
+.withdrawButton{
+    background-color: #F01E1E;
+    color: #FFFFFF;
+    border-style: none;
+    font-size: 1.2em;
+    border-radius: 4px;
+    padding: 4px 12px;
+} 
+
+.withdrawInputContainer{
+    text-align: center;
+    margin-top: 50%;
+}
+
+.withdrawInput{
+    width: 57%;
+}
+
+/* For staff menu */
+.staffMenuPic {grid-area: image; }
+.staffMenuName{grid-area: name;}
+.staffMenuDes{grid-area: description; }
+.staffMenuCalorie{grid-area: calorie; }
+.staffMenuprice{grid-area: price;}
+.staffMenuOperation{grid-area: operation;}
+
+
+.staffMenuGridContainer {
+    display: grid;
+    grid-template-areas:
+    "image image name name operation"
+    "image image description description operation"
+    "image image description description operation"
+    "image image calorie price operation"
+    ;
+    grid-gap: 3vw;
+    padding: 3vw;
+}
+
+.staffMenuDeleteButton{
+    background-color: #F01E1E;
+    color: #FFFFFF;
+    border-style: none;
+    font-size: 3vw;
+    border-radius: 4px;
+    padding: 4px 12px;
+    display: none;
+}
+
+.staffMenuUpdateButton{
+    background-color: #F01E1E;
+    color: #FFFFFF;
+    border-style: none;
+    font-size: 3vw;
+    border-radius: 4px;
+    padding: 4px 12px;
+    margin-top: 40%;
+    display: none;
+}
+
+/* For staff login */
+.staffLogin{
+    text-align: left;
+    margin-top: 10vw;
+}
+
+.storeName{
+    margin-top: 5vw;
+    text-align: center;
+    top:200px;
+    
+}
+
+.staffLogin h4{
+    margin-left: 15vw;
+    font-size: 5vw;
+}
+
+.loginInputContainer{
+    text-align: center;
+}
+
+.loginInput{
+    width: 70%;
+    BACKGROUND-COLOR: transparent;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom:0.4vw solid #B9B3B3;
+}
+
+#loginStoreName{
+    font-family: 'Sakura';
+    font-size: 22vw;
+}
+
+.loginContainer{
+    text-align: center;
+    margin-top: 10vw;
+}
+
+.loginButton{
+    border-radius: 1.66666666vw;
+    border-style: none;
+    background-color: #F01E1E;
+    color:#FFFFFF;
+    font-size: 5vw;
+    padding: 1vw 28vw 1vw 28vw;
+    margin-top: 2.5%;
+}
+
+/* .loginMain{
+    background-image: url("res/images/orderBackground.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    font-family: "Worksans";
+    position: relative;
+    
+} */
+
+.errorOrder{
+    position:absolute;
+    margin-top:-4vw;
+    margin-left:14vw;
+}

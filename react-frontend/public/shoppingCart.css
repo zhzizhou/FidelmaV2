@@ -1,0 +1,139 @@
+#shoppingCart {
+    position: fixed;
+    top: 90%;
+    left: 10vw;
+    width: 13vw;
+    height: 13vw;
+}
+
+#closeCartArea{
+    position: fixed;
+    width: 100%;
+    z-index: -2;
+    height: 100%;
+    transition: 1s;
+}
+
+#closeCartArea.active{
+    background-color: #70707090;
+    z-index: 2;
+}
+
+.cart{
+    display: block;
+    position: fixed;
+    background-color: #FFFFFF;
+    border-style: solid;
+    border-color: #707070;
+    width : 100%;
+    bottom: -500%;
+    transition: .4s;
+    z-index: 3;
+}
+
+.cart.active{
+    bottom: 0%;
+}
+
+.cart span{
+    margin-left: 3vw;
+    margin-bottom: 1vw;
+    font-size: larger;
+}
+
+.cart .foodBoxInCart{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 5vw;
+}
+
+.cart .foodBoxInCart img{
+    width: 17vw;
+    height: 17vw;
+    border-radius: 5vw;
+    margin-left: 6vw;
+}
+
+.cart .foodBoxInCart .foodDescBoxInCart{
+    display: flex;
+    flex-direction: row;
+}
+
+.cart .foodBoxInCart .foodTextContentInCart{
+    margin-left: 3vw;
+    margin-top: 2vw;
+    text-align: left;
+}
+
+.cart .foodBoxInCart .foodTextContentInCart .foodPriceInCart{
+    margin-left: 3vw;
+    color: #F01E1E;
+}
+
+
+.cart .changeQuantityArea{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 6vw;
+    margin-right: 3vw;
+}
+
+.cart .changeQuantityArea .QuantityBtnIconInCart{
+    width: 7vw;
+    height: 7vw;
+}
+
+.cart .changeQuantityArea .currentQuantity{
+    margin-left: 3vw;
+    margin-right: 3vw;
+    background-color: #FFFFFF;
+    width: 7vw;
+    height: 7vw;
+    text-align: center;
+    border-radius: 6.66666666vw;
+    border-style: solid;
+    border-width: 0.5vw;
+}
+
+.cartInfo{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.cartInfo span{
+
+}
+
+.cartInfo button{
+    border-radius: 1.66666666vw;
+    border-style: none;
+    background-color: #F01E1E;
+    color:#FFFFFF;
+    font-size: 6vw;
+    padding: 1vw 3vw 1vw 3vw;
+}
+
+.addToOrder{
+    display: flex;
+    justify-content: space-between;
+}
+
+.movingDishPhoto{
+    position: absolute;
+    top:15%;
+    left: 5vw;
+    width: 90vw;
+    height: 90vw;
+    z-index: 2;
+    transition: .4s;
+}
+
+.movingDishPhoto.active{
+    top: 93%;
+    left: 15vw;
+    width: 0vw;
+    height: 0vw;
+}
